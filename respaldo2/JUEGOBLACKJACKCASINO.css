@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("fondo_blackjack_final.png");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.mesa {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* CARTAS BANCA */
+.cartas-banca {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+/* CARTAS JUGADOR */
+.cartas-jugador {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+/* 👇 CONTENEDOR DE CARTA (MISMO TAMAÑO PARA TODAS) */
+.carta {
+    width: 90px;
+    height: 130px;
+}
+
+/* 👇 IMÁGENES DE CARTAS (AJUSTE PERFECTO) */
+.img-carta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TOTAL */
+.total {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 28px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+
+/* BOTONES */
+.botones-container {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.boton-img {
+    width: 180px;
+    cursor: pointer;
+}
+
+/* MENSAJE */
+.mensaje {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+}
